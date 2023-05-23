@@ -25,8 +25,10 @@ $ git clone https://github.com/svidal1987/tp2_2023.git
 $ npm install
 $ ng serve
 ```
+
+
 ## Agregar cambios y hacer push🔧
-desarrollar los cambios
+desarrollar los cambios y al finalizar realizar los siguientes comandos
 
 ```
 $ git add .
