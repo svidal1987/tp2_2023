@@ -9,8 +9,8 @@ Dados los grupos definir una modulo donde se desarrolle entidad y sub entidad pa
 
 
 ## Pasos para desarrollar
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+1. git clone https://github.com/svidal1987/tp2_2023.git
+2. desarrollar los cambios
+3. git add .
+4. git commit -m "Comentario"
+5. git push
