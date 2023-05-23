@@ -6,6 +6,7 @@ Dados los grupos definir una modulo donde se desarrolle entidad y sub entidad pa
   
 En la aplicacion se propiciona un framework de estilo [Bootstrap](https://getbootstrap.com/) no implica que puedan instalar otro.  
 Los URL de los tienen que estar referenciadas desde el archivo enviroment.ts.  
+
 Cada grupo tendra un directorio donde desarollar sus compoenntes y servicios.que se encontrara en:  
 
 ```
