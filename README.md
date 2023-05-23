@@ -6,3 +6,11 @@ Dados los grupos definir una modulo donde se desarrolle entidad y sub entidad pa
 
 ## Grupos
 * grupo 1: nombre uno y nombre dos
+
+
+## Pasos para desarrollar
+1. [General Info](#general-info)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
+4. [Collaboration](#collaboration)
+5. [FAQs](#faqs)
