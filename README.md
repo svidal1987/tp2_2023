@@ -10,13 +10,16 @@ Dados los grupos definir una modulo donde se desarrolle entidad y sub entidad pa
 ** entidad y subentidad
 
 
-## Pasos para desarrollar
+## Instalar y ejecutar🔧
 ```
 $ git clone https://github.com/svidal1987/tp2_2023.git
 $ npm install
 $ ng serve
-
+```
+## Agregar cambios y hacer push🔧
 desarrollar los cambios
+
+```
 $ git add .
 $ git commit -m "Comentario"
 $ git push
