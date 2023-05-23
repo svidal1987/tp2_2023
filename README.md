@@ -28,7 +28,13 @@ $ ng serve
 
 
 ## Agregar cambios y hacer push🔧
-desarrollar los cambios y al finalizar realizar los siguientes comandos
+desarrollar los cambios y servicios
+```
+$ ng g c modulos/modulo-uno
+$ ng g s service/service
+```
+
+al finalizar realizar los siguientes comandos
 
 ```
 $ git add .
