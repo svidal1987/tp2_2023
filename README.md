@@ -5,6 +5,7 @@ Desarrollo colavorativo
 Dados los grupos definir una modulo donde se desarrolle entidad y sub entidad para realizar el CRUD de las mismas, desde esta aplicacion angular, este generar  un microservicio nodejs publicarlo en vercel, las ramas y los merge se implementaran en clase al igual que los reviwers de los cambios.
   
 En la aplicacion se propiciona un framework de estilo [Bootstrap](https://getbootstrap.com/) no implica que puedan instalar otro.
+Los URL de los
 
 
 ## Grupos
