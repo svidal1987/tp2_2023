@@ -10,7 +10,7 @@ Los URL de los tienen que estar referenciadas desde el archivo enviroment.ts.
 Cada grupo tendra un directorio donde desarollar sus compoenntes y servicios.que se encontrara en:  
 
 ```
-src/leibnitz/PIII/modulos/
+src/app/leibnitz/PIII/modulos/
 ```
 
 ## Grupos⚙️
