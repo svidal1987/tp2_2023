@@ -15,7 +15,7 @@ src/app/leibnitz/PIII/modulos/
 
 ## Grupos⚙️
 * grupo 1:    
-nombre uno y nombre dos   
+integrante uno e integrante dos   
 entidad y subentidad   
 
 
