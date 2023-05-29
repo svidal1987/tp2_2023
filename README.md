@@ -15,8 +15,17 @@ src/app/leibnitz/PIII/modulos/
 
 ## Grupos⚙️
 * grupo 1:    
-integrante uno e integrante dos   
-entidad y subentidad   
+Longo y Benavidez   
+entidad y subentidad a definir
+  
+* grupo 2:    
+Chiotti   
+Vehiculo y Marcas
+  
+* grupo 3:    
+Luna y Holt   
+Grupos de elentos y atomos
+
 
 
 ## Instalar y ejecutar🔧
