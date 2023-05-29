@@ -33,7 +33,13 @@ entidad y subentidad a definir
 * grupo 5:    
 Delgado y Garaffini   
 entidad y subentidad a definir
+  
+* grupo 6:    
+Renata  
+entidad y subentidad a definir
+  
 
+ 
 
 
 
