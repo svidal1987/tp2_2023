@@ -25,6 +25,15 @@ Vehiculo y Marcas
 * grupo 3:    
 Luna y Holt   
 Grupos de elentos y atomos
+  
+* grupo 4:    
+Roldan y Cipoletti   
+entidad y subentidad a definir
+  
+* grupo 5:    
+Delgado y Garaffini   
+entidad y subentidad a definir
+
 
 
 
