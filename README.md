@@ -28,7 +28,7 @@ Grupos de elentos y atomos
   
 * grupo 4:    
 Roldan y Cipoletti   
-entidad y subentidad a definir
+Moto y Marcas
   
 * grupo 5:    
 Delgado y Garaffini   
