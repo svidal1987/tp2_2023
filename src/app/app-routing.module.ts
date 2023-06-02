@@ -8,6 +8,7 @@ import { Grupo3Component } from './leibnitz/PIII/modulos/grupo3/grupo3.component
 import { Grupo4Component } from './leibnitz/PIII/modulos/grupo4/grupo4.component';
 import { Grupo5Component } from './leibnitz/PIII/modulos/grupo5/grupo5.component';
 import { Grupo6Component } from './leibnitz/PIII/modulos/grupo6/grupo6.component';
+import { ProfeComponent } from './leibnitz/PIII/modulos/profe/profe.component';
 
 const routes : Routes = [
   {  path:'', redirectTo:'home', pathMatch:'full'},
@@ -18,6 +19,9 @@ const routes : Routes = [
   {  path:'grupo4', component:Grupo4Component},
   {  path:'grupo5', component:Grupo5Component},
   {  path:'grupo6', component:Grupo6Component},
+
+
+  {  path:'profe', component:ProfeComponent},
 
   {  path:'**', redirectTo:'home', pathMatch:'full'},
 ]

@@ -12,6 +12,7 @@ import { Grupo5Component } from './leibnitz/PIII/modulos/grupo5/grupo5.component
 import { Grupo6Component } from './leibnitz/PIII/modulos/grupo6/grupo6.component';
 import { HomeComponent } from './leibnitz/PIII/generic/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ProfeComponent } from './leibnitz/PIII/modulos/profe/profe.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AppRoutingModule } from './app-routing.module';
     Grupo4Component,
     Grupo5Component,
     Grupo6Component,
-    HomeComponent
+    HomeComponent,
+    ProfeComponent
   ],
   imports: [
     BrowserModule,    
