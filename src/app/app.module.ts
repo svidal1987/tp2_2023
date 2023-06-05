@@ -12,6 +12,12 @@ import { Grupo5Component } from './leibnitz/PIII/modulos/grupo5/grupo5.component
 import { Grupo6Component } from './leibnitz/PIII/modulos/grupo6/grupo6.component';
 import { HomeComponent } from './leibnitz/PIII/generic/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+<<<<<<< Updated upstream
+=======
+import { ProfeComponent } from './leibnitz/PIII/modulos/profe/profe.component';
+import { CrearPlanetaComponent } from './leibnitz/PIII/modulos/profe/crear-planeta/crear-planeta.component';
+import { EditarPlanetaComponent } from './leibnitz/PIII/modulos/profe/editar-planeta/editar-planeta.component';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -24,7 +30,14 @@ import { AppRoutingModule } from './app-routing.module';
     Grupo4Component,
     Grupo5Component,
     Grupo6Component,
+<<<<<<< Updated upstream
     HomeComponent
+=======
+    HomeComponent,
+    ProfeComponent,
+    CrearPlanetaComponent,
+    EditarPlanetaComponent
+>>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,    
