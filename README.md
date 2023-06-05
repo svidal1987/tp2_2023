@@ -19,8 +19,32 @@ ng g c leibnitz/PIII/modulos/grupo1/un_componente_nuevo
 
 ## Grupos⚙️
 * grupo 1:    
-integrante uno e integrante dos   
-entidad y subentidad   
+Longo y Benavidez   
+entidad y subentidad a definir
+  
+* grupo 2:    
+Chiotti   
+Vehiculo y Marcas
+  
+* grupo 3:    
+Luna y Holt   
+Grupos de elentos y atomos
+  
+* grupo 4:    
+Roldan y Cipoletti   
+Moto y Marcas
+  
+* grupo 5:    
+Delgado y Garaffini   
+entidad y subentidad a definir
+  
+* grupo 6:    
+Renata  
+entidad y subentidad a definir
+  
+
+ 
+
 
 
 ## Instalar y ejecutar🔧
