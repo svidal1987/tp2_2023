@@ -9,6 +9,8 @@ import { Grupo4Component } from './leibnitz/PIII/modulos/grupo4/grupo4.component
 import { Grupo5Component } from './leibnitz/PIII/modulos/grupo5/grupo5.component';
 import { Grupo6Component } from './leibnitz/PIII/modulos/grupo6/grupo6.component';
 import { ProfeComponent } from './leibnitz/PIII/modulos/profe/profe.component';
+import { CrearPlanetaComponent } from './leibnitz/PIII/modulos/profe/crear-planeta/crear-planeta.component';
+import { EditarPlanetaComponent } from './leibnitz/PIII/modulos/profe/editar-planeta/editar-planeta.component';
 
 const routes : Routes = [
   {  path:'', redirectTo:'home', pathMatch:'full'},
@@ -20,8 +22,9 @@ const routes : Routes = [
   {  path:'grupo5', component:Grupo5Component},
   {  path:'grupo6', component:Grupo6Component},
 
-
   {  path:'profe', component:ProfeComponent},
+  {  path:'profe/planeta/editar/:id}', component:EditarPlanetaComponent},
+  {  path:'profe/planeta/crear', component:CrearPlanetaComponent},
 
   {  path:'**', redirectTo:'home', pathMatch:'full'},
 ]

@@ -7,10 +7,14 @@ Dados los grupos definir una modulo donde se desarrolle entidad y sub entidad pa
 En la aplicacion se propiciona un framework de estilo [Bootstrap](https://getbootstrap.com/) no implica que puedan instalar otro.  
 Los URL de los tienen que estar referenciadas desde el archivo enviroment.ts.  
 
-Cada grupo tendra un directorio donde desarollar sus compoenntes y servicios.que se encontrara en:  
+Cada grupo tendra un directorio donde desarollar sus compoenntes y servicios que se encontrara en:  
 
 ```
 src/app/leibnitz/PIII/modulos/
+
+##Para crear un componente Por ej en el grupo1:
+ng g c leibnitz/PIII/modulos/grupo1/un_componente_nuevo
+
 ```
 
 ## Grupos⚙️

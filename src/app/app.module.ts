@@ -13,6 +13,8 @@ import { Grupo6Component } from './leibnitz/PIII/modulos/grupo6/grupo6.component
 import { HomeComponent } from './leibnitz/PIII/generic/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProfeComponent } from './leibnitz/PIII/modulos/profe/profe.component';
+import { CrearPlanetaComponent } from './leibnitz/PIII/modulos/profe/crear-planeta/crear-planeta.component';
+import { EditarPlanetaComponent } from './leibnitz/PIII/modulos/profe/editar-planeta/editar-planeta.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ProfeComponent } from './leibnitz/PIII/modulos/profe/profe.component';
     Grupo5Component,
     Grupo6Component,
     HomeComponent,
-    ProfeComponent
+    ProfeComponent,
+    CrearPlanetaComponent,
+    EditarPlanetaComponent
   ],
   imports: [
     BrowserModule,    
