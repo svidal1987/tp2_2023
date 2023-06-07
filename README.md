@@ -19,28 +19,25 @@ ng g c leibnitz/PIII/modulos/grupo1/un_componente_nuevo
 
 ## Grupos⚙️
 * grupo 1:    
-Longo y Benavidez   
-entidad y subentidad a definir
-  
+Longo y Chiotti
+Menu, mejoras esteticas y coordinacion de componentes
+
 * grupo 2:    
-Chiotti   
-Vehiculo y Marcas
+Roldan Garaffini y Delgado   
+Auth0, validacion de usuario y CRUD usuario
   
 * grupo 3:    
-Luna y Holt   
-Grupos de elentos y atomos
+Benavide, Piva y Luna
+CRUD Peliculas y Actores
   
 * grupo 4:    
-Roldan y Cipoletti   
-Moto y Marcas
+Barone Irusta y Cipoletti 
+CRUD Estadistitica de uso
   
 * grupo 5:    
-Delgado y Garaffini   
-entidad y subentidad a definir
+Menara y Renata
+CRUD Gestion de lista de rep.
   
-* grupo 6:    
-Renata  
-entidad y subentidad a definir
   
 
  
