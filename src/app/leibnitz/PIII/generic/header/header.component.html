@@ -1,44 +1,88 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página</title>
+  <style>
+    /* Estilos de la página */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #313131;
+      padding: 10px;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      color: #ff5252;
+      font-family: 'Netflix Sans', Arial, sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    .navbar-brand img {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .nav-link {
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #ffc6c6;
+    }
+
+    .nav-link.active {
+      color: #ff0000 !important; /* Cambia el color a rojo */
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <img style="margin: 5px;" src="/assets/img/photo_large.png" alt="Bootstrap" width="42" height="42">
-      <a class="navbar-brand" href="#">TP 2 - Trabajo colaborativo</a>
+      <a class="navbar-brand" href="#">
+        <img src="/assets/img/cine.png" alt="Bootstrap">
+        LEIBFLIX
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/peliculas" routerLinkActive="active">Peliculas</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/grupo1" routerLinkActive="active">GP1</a>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/actores" routerLinkActive="active">Actores</a>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="/grupo2" routerLinkActive="active">GP2</a>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/estadisticas" routerLinkActive="active">Estadisticas</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/grupo3" routerLinkActive="active">GP3</a>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/listadereproduccion" routerLinkActive="active">Lista de Reproducción</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/grupo4" routerLinkActive="active">GP4</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/grupo5" routerLinkActive="active">GP5</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/grupo6" routerLinkActive="active">GP6</a>
-          </li>
-          <li class="nav-item">
+          <li class="nav-item mx-2">
             <a class="nav-link" href="/profe" routerLinkActive="active">PROFE</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-2">
             <a class="nav-link" href="/profe">PROFE</a>
           </li>
         </ul>
-
       </div>
     </div>
   </nav>
-
-
+</body>
+</html>
