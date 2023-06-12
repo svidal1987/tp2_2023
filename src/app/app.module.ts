@@ -15,6 +15,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProfeComponent } from './leibnitz/PIII/modulos/profe/profe.component';
 import { CrearPlanetaComponent } from './leibnitz/PIII/modulos/profe/crear-planeta/crear-planeta.component';
 import { EditarPlanetaComponent } from './leibnitz/PIII/modulos/profe/editar-planeta/editar-planeta.component';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+// Import the module from the SDK
+import { AuthModule } from '@auth0/auth0-angular';
 
 @NgModule({
   declarations: [
@@ -30,12 +34,21 @@ import { EditarPlanetaComponent } from './leibnitz/PIII/modulos/profe/editar-pla
     HomeComponent,
     ProfeComponent,
     CrearPlanetaComponent,
-    EditarPlanetaComponent
+    EditarPlanetaComponent,
+    InicioComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,    
     AppRoutingModule,
     HttpClientModule,
+    AuthModule.forRoot({
+      domain: 'dev-g4llofp4fbls07nw.us.auth0.com',
+      clientId: 'jswybq3M4ezletgJAwEsHQUs25OJt5ef',
+      authorizationParams: {
+        redirect_uri: window.location.origin
+      }
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

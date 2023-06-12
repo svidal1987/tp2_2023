@@ -36,7 +36,16 @@
             <a class="nav-link" href="/profe">PROFE</a>
           </li>
         </ul>
-
+        
+      </div>
+      <div class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" (click)="logOut()" type="submit">LogOut</button>
+      </div>
+      <div>
+        <ul *ngIf="auth.user$ | async as user">
+          <li>{{ user.name }}</li>
+          <li>{{ user.email }}</li>
+        </ul>
       </div>
     </div>
   </nav>
