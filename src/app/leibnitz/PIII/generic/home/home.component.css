@@ -5,17 +5,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: aliceblue;
+    /*height: 100vh;
+    background-color: aliceblue;*/
+    background-image: url("../../../../../assets/img/sillas.jpg");
+    background-size: 50% 100%;
+    background-position: right center;
   }
 
+  .carousel-div
+  {
+    width: 70%;
+  }
   .content {
     text-align: center;
   }
 
   .content img {
-    width: 200px;
-    height: 200px;
+    border-radius: 25px;
   }
 
   .content h1 {

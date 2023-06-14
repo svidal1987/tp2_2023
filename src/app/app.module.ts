@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProfeComponent } from './leibnitz/PIII/modulos/profe/profe.component';
 import { CrearPlanetaComponent } from './leibnitz/PIII/modulos/profe/crear-planeta/crear-planeta.component';
 import { EditarPlanetaComponent } from './leibnitz/PIII/modulos/profe/editar-planeta/editar-planeta.component';
+import { FooterComponent } from './leibnitz/PIII/generic/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { EditarPlanetaComponent } from './leibnitz/PIII/modulos/profe/editar-pla
     HomeComponent,
     ProfeComponent,
     CrearPlanetaComponent,
-    EditarPlanetaComponent
+    EditarPlanetaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,    
