@@ -10,6 +10,7 @@ import { AuthService } from '@auth0/auth0-angular';
 export class AppComponent implements OnInit {
   title = 'tp2_2023';
 
+
   isLogin = false
   constructor(private localStorage: LocalStorageService,
              public auth: AuthService) {
@@ -26,8 +27,9 @@ export class AppComponent implements OnInit {
 
   guardarJsonEnLocalStorage() {
     const json = { nombre: 'Valentin', apellido: 'Longo' };
-    this.localStorage.set('miJson', JSON.stringify(json));
+    localStorage.setItem('miJson', JSON.stringify(json));
   }
+
   login(){
     this.auth.loginWithRedirect()
   }
