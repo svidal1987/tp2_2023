@@ -15,12 +15,13 @@ import { EditarPlanetaComponent } from './leibnitz/PIII/modulos/profe/editar-pla
 const routes : Routes = [
   {  path:'', redirectTo:'home', pathMatch:'full'},
   {  path:'home', component:HomeComponent},
-  {  path:'grupo1', component:Grupo1Component},
-  {  path:'grupo2', component:Grupo2Component},
-  {  path:'grupo3', component:Grupo3Component},
-  {  path:'grupo4', component:Grupo4Component},
+  {  path:'peliculas', component:Grupo1Component},
+  {  path:'actores', component:Grupo2Component},
+  {  path:'estadisticas', component:Grupo3Component},
+  {  path:'listadereproduccion', component:Grupo4Component},
   {  path:'grupo5', component:Grupo5Component},
   {  path:'grupo6', component:Grupo6Component},
+  {  path:'grupo2', component:Grupo2Component},
 
   {  path:'profe', component:ProfeComponent},
   {  path:'profe/planeta/editar/:id}', component:EditarPlanetaComponent},

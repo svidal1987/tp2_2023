@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LocalStorageService } from 'angular-web-storage';
 import { AuthService } from '@auth0/auth0-angular';
 import { HttpClient, HttpHeaders  } from '@angular/common/http';
 
@@ -7,10 +8,12 @@ import { HttpClient, HttpHeaders  } from '@angular/common/http';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'tp2_2023';
+
   isLogin = false
-  constructor(public auth: AuthService, private http: HttpClient){
+  localStorage: any;
+  constructor(public auth: AuthService, public http: HttpClient){
     this.auth.isAuthenticated$.subscribe(isAuthenticated => {
       if(isAuthenticated){
         this.isLogin = true
@@ -29,17 +32,26 @@ export class AppComponent {
       const headers = new HttpHeaders().set('Content-Type', 'application/json');
 
       this.http.post(url, user, { headers }).subscribe(
-        (response) => {
+        (response: any) => {
           console.log('Solicitud exitosa', response);
         },
-        (error) => {
+        (error: any) => {
           console.error('Error en la solicitud', error);
         }
       );
     });
   }
 
+  ngOnInit() {
+    this.guardarJsonEnLocalStorage();
+  }
+
+  guardarJsonEnLocalStorage() {
+    const json = { nombre: 'Valentin', apellido: 'Longo' };
+    this.localStorage.set('miJson', JSON.stringify(json));
+  }
   login(){
     this.auth.loginWithRedirect()
   }
 }
+

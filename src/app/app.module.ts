@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProfeComponent } from './leibnitz/PIII/modulos/profe/profe.component';
 import { CrearPlanetaComponent } from './leibnitz/PIII/modulos/profe/crear-planeta/crear-planeta.component';
 import { EditarPlanetaComponent } from './leibnitz/PIII/modulos/profe/editar-planeta/editar-planeta.component';
+import { FooterComponent } from './leibnitz/PIII/generic/footer/footer.component';
 
 // Import the module from the SDK
 import { AuthModule } from '@auth0/auth0-angular';
@@ -34,7 +35,7 @@ import { AuthModule } from '@auth0/auth0-angular';
     ProfeComponent,
     CrearPlanetaComponent,
     EditarPlanetaComponent,
-    
+    FooterComponent
   ],
   imports: [
     BrowserModule,    
