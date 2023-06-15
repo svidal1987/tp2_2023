@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'mifuente', Helvetica !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*height: 100vh;
+    background-color: aliceblue;*/
+    background-image: url("../../../../../assets/img/sillas.jpg");
+    background-size: 50% 100%;
+    background-position: right center;
+  }
+
+  .carousel-div
+  {
+    width: 70%;
+  }
+  .content {
+    text-align: center;
+  }
+
+  .content img {
+    border-radius: 25px;
+  }
+
+  .content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+  }

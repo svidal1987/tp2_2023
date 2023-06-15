@@ -1,1 +1,48 @@
 
+
+
+  .fuente a{
+    font-family:'mifuente', Helvetica !important;
+  }
+
+  .navbar {
+    background-color: #313131;
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #ff5252;
+    /**font-family: 'Netflix Sans', Arial, sans-serif;**/
+    font-family: Helvetica !important;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .navbar-brand img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-text{
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: #ffc6c6;
+  }
+
+  .nav-link.active {
+    color: #ff0000 !important; /* Cambia el color a rojo */
+    font-weight: bold;
+    text-decoration: underline;
+  }
