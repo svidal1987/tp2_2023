@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LocalStorageService } from 'angular-web-storage';
 
 @Component({
   selector: 'app-header',
@@ -9,14 +8,14 @@ import { LocalStorageService } from 'angular-web-storage';
 export class HeaderComponent implements OnInit {
   json: any; // Variable para almacenar el JSON
 
-  constructor(private localStorage: LocalStorageService) { }
-
   ngOnInit(): void {
     this.obtenerJsonDelLocalStorage();
   }
 
   obtenerJsonDelLocalStorage() {
-    const jsonStr = this.localStorage.get('miJson');
-    this.json = JSON.parse(jsonStr);
+    const jsonStr = localStorage.getItem('miJson');
+    if (jsonStr !== null) {
+      this.json = JSON.parse(jsonStr);
+    }
   }
 }
