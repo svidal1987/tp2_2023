@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalStorageService } from 'angular-web-storage';
+import { AuthService } from '@auth0/auth0-angular';
+
 
 @Component({
   selector: 'app-header',
@@ -8,6 +11,9 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   json: any; // Variable para almacenar el JSON
 
+
+  constructor(private localStorage: LocalStorageService,
+             public auth: AuthService) { }
   ngOnInit(): void {
     this.obtenerJsonDelLocalStorage();
   }
@@ -18,4 +24,8 @@ export class HeaderComponent implements OnInit {
       this.json = JSON.parse(jsonStr);
     }
   }
+  logOut(){
+    this.auth.logout()
+  }
+
 }
