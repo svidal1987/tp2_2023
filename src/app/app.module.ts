@@ -17,6 +17,9 @@ import { CrearPlanetaComponent } from './leibnitz/PIII/modulos/profe/crear-plane
 import { EditarPlanetaComponent } from './leibnitz/PIII/modulos/profe/editar-planeta/editar-planeta.component';
 import { FooterComponent } from './leibnitz/PIII/generic/footer/footer.component';
 
+// Import the module from the SDK
+import { AuthModule } from '@auth0/auth0-angular';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +41,14 @@ import { FooterComponent } from './leibnitz/PIII/generic/footer/footer.component
     BrowserModule,    
     AppRoutingModule,
     HttpClientModule,
+    AuthModule.forRoot({
+      domain: 'dev-g4llofp4fbls07nw.us.auth0.com',
+      clientId: 'jswybq3M4ezletgJAwEsHQUs25OJt5ef',
+      cacheLocation: "localstorage",
+      authorizationParams: {
+        redirect_uri: window.location.origin
+      }
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
