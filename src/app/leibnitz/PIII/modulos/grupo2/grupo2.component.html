@@ -1,1 +1,19 @@
-<p>grupo2 works!</p>
+<div *ngIf="auth.user$ | async as user" class="card mx-auto mt-5" style="width: 18rem;">
+    <img class="card-img-top" [src]="user.picture" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Usuario Logueado</h5>
+      <ul *ngIf="auth.user$ | async as user">
+        <li>{{ user.given_name }}</li>
+        <li>{{ user.family_name }}</li>
+        <li>{{ user.email }}</li>
+        <!-- <p>user: {{ user | json }}</p> -->
+    </ul>
+      <a href="#" class="btn btn-primary">Go Home</a>
+    </div>
+</div>
+
+<!-- <div class="mt-5" *ngIf="user"> -->
+  <!-- <p>user: {{ user | json }}</p> -->
+  <!-- <p>Apellido: {{ user.lastName }}</p>
+  <p>Correo electrónico: {{ user.username }}</p> -->
+<!-- </div> -->
