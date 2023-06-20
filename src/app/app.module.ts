@@ -19,6 +19,11 @@ import { FooterComponent } from './leibnitz/PIII/generic/footer/footer.component
 
 // Import the module from the SDK
 import { AuthModule } from '@auth0/auth0-angular';
+import { Top10Component } from './leibnitz/PIII/modulos/grupo4/top10/top10.component';
+import { TopGenerosComponent } from './leibnitz/PIII/modulos/grupo4/top-generos/top-generos.component';
+import { TendenciasComponent } from './leibnitz/PIII/modulos/grupo4/tendencias/tendencias.component';
+import { TotalUsariosComponent } from './leibnitz/PIII/modulos/grupo4/total-usarios/total-usarios.component';
+import { EstadisticasUsuarioComponent } from './leibnitz/PIII/modulos/grupo4/estadisticas-usuario/estadisticas-usuario.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,12 @@ import { AuthModule } from '@auth0/auth0-angular';
     ProfeComponent,
     CrearPlanetaComponent,
     EditarPlanetaComponent,
-    FooterComponent
+    FooterComponent,
+    Top10Component,
+    TopGenerosComponent,
+    TendenciasComponent,
+    TotalUsariosComponent,
+    EstadisticasUsuarioComponent
   ],
   imports: [
     BrowserModule,    

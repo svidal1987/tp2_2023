@@ -17,7 +17,7 @@ const routes : Routes = [
   {  path:'home', component:HomeComponent},
   {  path:'peliculas', component:Grupo1Component},
   {  path:'actores', component:Grupo2Component},
-  {  path:'estadisticas', component:Grupo3Component},
+  {  path:'estadisticas', component:Grupo4Component},
   {  path:'listadereproduccion', component:Grupo4Component},
   {  path:'grupo5', component:Grupo5Component},
   {  path:'grupo6', component:Grupo6Component},
