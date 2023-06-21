@@ -37,10 +37,12 @@ export class AppComponent implements OnInit {
             this.booleanVariable = true;
           } else {
             this.booleanVariable = false;
+            this.isLogin = false
           }
         },
         (error: any) => {
           this.booleanVariable = false;
+          this.isLogin = false
           console.error("Error en la solicitud:", error);
         }
       );
