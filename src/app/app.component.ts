@@ -10,36 +10,42 @@ import { HttpClient, HttpHeaders  } from '@angular/common/http';
 })
 export class AppComponent implements OnInit {
   title = 'tp2_2023';
+  booleanVariable: boolean = false;
 
   isLogin = false
   localStorage: any;
+  user: any;
+  json: any;
   constructor(public auth: AuthService, public http: HttpClient){
+    this.booleanVariable = false;
     this.auth.isAuthenticated$.subscribe(isAuthenticated => {
       if(isAuthenticated){
         this.isLogin = true
       }
     })
 
-    this.auth.user$.subscribe((authResult) => {
-      const user = {
-        firstName: authResult?.given_name,
-        lastName: authResult?.family_name,
-        username: authResult?.email,
-      };
-      
-      // Enviar el objeto de usuario a tu API
-      const url = 'https://ejemplo.com/api/endpoint';
-      const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    
 
-      this.http.post(url, user, { headers }).subscribe(
+    this.auth.user$.subscribe((authResult) => {
+      const username = authResult?.email;
+      const url = `https://api-gateway-eosin.vercel.app/usuario/${username}`;
+      
+      console.log("URL" + url)
+      this.http.get(url).subscribe(
         (response: any) => {
-          console.log('Solicitud exitosa', response);
+          if (response.message === "usuario retrieved" && response.data.length > 0) {
+            this.booleanVariable = true;
+          } else {
+            this.booleanVariable = false;
+          }
         },
         (error: any) => {
-          console.error('Error en la solicitud', error);
+          this.booleanVariable = false;
+          console.error("Error en la solicitud:", error);
         }
       );
     });
+
   }
 
   ngOnInit() {
@@ -48,8 +54,20 @@ export class AppComponent implements OnInit {
 
   guardarJsonEnLocalStorage() {
     const json = { nombre: 'Valentin', apellido: 'Longo' };
-    this.localStorage.set('miJson', JSON.stringify(json));
+    localStorage.setItem('miJson', JSON.stringify(json));
+
+    this.auth.user$.subscribe((authResult) => {
+      const user = {
+        nombre: authResult?.given_name,
+        apellido: authResult?.family_name,
+        username: authResult?.email,
+      };
+      this.user = user;
+      localStorage.setItem('user', JSON.stringify(user));
+    });
   }
+
+
   login(){
     this.auth.loginWithRedirect()
   }
