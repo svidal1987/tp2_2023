@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   title = 'tp2_2023';
   booleanVariable: boolean = false;
 
+
   isLogin = false
   localStorage: any;
   user: any;
