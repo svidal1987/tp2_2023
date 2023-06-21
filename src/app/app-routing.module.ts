@@ -20,7 +20,6 @@ const routes : Routes = [
   {  path:'estadisticas', component:Grupo4Component},
   {  path:'listadereproduccion', component:Grupo5Component},
 
-
   {  path:'profe', component:ProfeComponent},
   {  path:'profe/planeta/editar/:id}', component:EditarPlanetaComponent},
   {  path:'profe/planeta/crear', component:CrearPlanetaComponent},

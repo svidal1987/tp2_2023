@@ -29,6 +29,9 @@
           <li class="nav-item mx-2">
             <a class="nav-link" href="/profe">PROFE</a>
           </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/grupo2">PERFIL</a>
+          </li>
         </ul>
         
       </div>
@@ -37,12 +40,14 @@
           {{ user.name }}
         </ul>
       </div>
-      <div class="form-inline my-2 my-lg-0">
+      <div class="form-inline my-2 my-lg-0 me-3">
         <button class="btn btn-outline-success my-2 my-sm-0" (click)="logOut()" type="submit">LogOut</button>
       </div>
       <span class="navbar-text">
-        Bienvenido, {{ json.nombre }} {{ json.apellido }}
+        <!-- Bienvenido, {{ json.nombre }} {{ json.apellido }} -->
+        Bienvenido, {{ user.nombre }} {{ user.apellido }}
       </span>
     </div>
+    
   </nav>
 </header>
