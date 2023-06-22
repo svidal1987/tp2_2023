@@ -29,11 +29,6 @@
         </ul>
         
       </div>
-      <div class="me-3 mt-3">
-        <ul *ngIf="auth.user$ | async as user">
-          {{ user.name }}
-        </ul>
-      </div>
       <div class="form-inline my-2 my-lg-0 me-3">
         <button class="btn btn-outline-success my-2 my-sm-0" (click)="logOut()" type="submit">LogOut</button>
       </div>
