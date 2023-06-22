@@ -5,6 +5,9 @@ import { HomeComponent } from './leibnitz/PIII/generic/home/home.component';
 import { Grupo1Component } from './leibnitz/PIII/modulos/grupo1/grupo1.component';
 import { Grupo2Component } from './leibnitz/PIII/modulos/grupo2/grupo2.component';
 import { Grupo3Component } from './leibnitz/PIII/modulos/grupo3/grupo3.component';
+import { CrearPeliculaComponent } from './leibnitz/PIII/modulos/grupo3/crear-pelicula/crear-pelicula.component';
+import { EditarPeliculaComponent } from './leibnitz/PIII/modulos/grupo3/editar-pelicula/editar-pelicula.component';
+import { ConsultarPeliculaComponent } from './leibnitz/PIII/modulos/grupo3/consultar-pelicula/consultar-pelicula.component';
 import { Grupo4Component } from './leibnitz/PIII/modulos/grupo4/grupo4.component';
 import { Grupo5Component } from './leibnitz/PIII/modulos/grupo5/grupo5.component';
 import { Grupo6Component } from './leibnitz/PIII/modulos/grupo6/grupo6.component';
@@ -17,6 +20,9 @@ const routes : Routes = [
   {  path:'home', component:HomeComponent},
   {  path:'user', component:Grupo2Component},
   {  path:'peliculas', component:Grupo3Component},
+  {  path:'peliculas/pelicula/crear', component:CrearPeliculaComponent},
+  {  path:'peliculas/pelicula/editar/:id', component:EditarPeliculaComponent},
+  {  path:'peliculas/pelicula/consultar/:titulo', component:ConsultarPeliculaComponent},
   {  path:'estadisticas', component:Grupo4Component},
   {  path:'listadereproduccion', component:Grupo5Component},
 

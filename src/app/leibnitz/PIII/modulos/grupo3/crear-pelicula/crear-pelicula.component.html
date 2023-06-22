@@ -1,0 +1,64 @@
+<div class="row mt-1">
+    <div class="col-lg-4 offset-lg-4">
+      <div class="card text-white bg-secondary mb-3">
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="AgregarPelicula()">
+            <div class="form-group">
+              <label for="Titulo" class="form-label">Titulo</label>
+              <input type="text" class="form-control" id="Titulo" name="titulo" placeholder="Titulo"
+                formControlName="titulo" required>
+            </div>
+            <div class="form-group">
+              <label for="AnioLanzamiento" class="form-label">Año lanzamiento</label>
+              <input type="date" class="form-control" id="Aniolanzamiento" name="aniolanzamiento"
+                placeholder="Año Lanzamiento" formControlName="aniolanzamiento" required>
+            </div>
+            <div class="form-group">
+              <label for="Director" class="form-label">Director</label>
+              <select class="form-select" id="Director" name="idDirector" aria-label="Default select example"
+                formControlName="idDirector" required>
+                <option *ngFor="let director of Directores" [value]="director.idDirector">{{ director.Nombre }}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="Actor" class="form-label">Actor</label>
+              <select class="form-select" id="Actor" name="idActor" aria-label="Default select example"
+                formControlName="idActor" required>
+                <option *ngFor="let actor of Actores" [value]="actor.idActor">{{ actor.Nombre }}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="Genero" class="form-label">Género</label>
+              <select class="form-select" id="Genero" name="idGenero" aria-label="Default select example"
+                formControlName="idGenero" required>
+                <option *ngFor="let genero of Generos" [value]="genero.idGenero">{{ genero.Nombre }}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="Sinopsis" class="form-label">Sinopsis</label>
+              <input type="text" class="form-control" id="Sinopsis" name="sinopsis" placeholder="Sinopsis"
+                formControlName="sinopsis" required>
+            </div>
+            <div class="form-group">
+              <label for="Duracion" class="form-label">Duracion</label>
+              <input type="text" class="form-control" id="Duracion" name="duracion" placeholder="Duracion"
+                formControlName="duracion" required>
+            </div>
+            <div class="form-group">
+              <label for="Imagen" class="form-label">Imagen</label>
+              <input type="text" class="form-control" id="Imagen" name="url" placeholder="Url de la imagen"
+                formControlName="imagen" required>
+            </div>
+            <div class="row mt-2 text-center">
+              <div class="col-lg-6">
+                <button type="button" class="btn btn-danger" routerLink="/peliculas">Volver</button>
+              </div>
+              <div class="col-lg-6">
+                <button type="submit" class="btn btn-success" [disabled]="!form.valid">Agregar Pelicula</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
