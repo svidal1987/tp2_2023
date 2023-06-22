@@ -1,1 +1,37 @@
-<p>grupo3 works!</p>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Listado de Peliculas</span>
+      <button style="float: right;" class="btn btn-outline-success" type="submit" routerLink="pelicula/crear">Agregar
+        Pelicula</button>
+    </div>
+  </nav>
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Titulo</th>
+        <th scope="col">Duracion</th>
+        <th scope="col">Sinopsis</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody *ngIf="Peliculas">
+      <tr *ngFor="let Pelicula of Peliculas">
+        <th scope="row">{{Pelicula.titulo}}</th>
+        <td>{{Pelicula.duracion}}</td>
+        <td>{{Pelicula.sinopsis}}</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary" [routerLink]="['pelicula/consultar',Pelicula.titulo]">
+              <i class="bi bi-search" style="font-size: small;"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" [routerLink]="['pelicula/editar/', Pelicula.id]">
+              <i class="bi bi-pencil" style="font-size: small;"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" (click)="deletePelicula(Pelicula.id)">
+              <i class="bi bi-trash3" style="font-size: small;"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>

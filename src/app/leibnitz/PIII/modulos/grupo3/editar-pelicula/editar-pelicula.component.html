@@ -1,0 +1,57 @@
+<div class="row mt-1">
+    <div class="col-lg-4 offset-lg-4">
+      <div class="card text-white bg-secondary mb-3">
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="editarPelicula()">
+            <div class="form-group">
+              <label for="titulo" class="form-label">Título</label>
+              <input type="text" class="form-control" id="titulo" placeholder="Título" formControlName="titulo" required>
+            </div>
+            <div class="form-group">
+              <label for="aniolanzamiento" class="form-label">Año de lanzamiento</label>
+              <input type="date" class="form-control" id="aniolanzamiento" placeholder="Año de lanzamiento" formControlName="aniolanzamiento" required>
+            </div>
+            <div class="form-group">
+              <label for="idDirector" class="form-label">Director</label>
+              <select class="form-select" id="idDirector" formControlName="idDirector" aria-label="Default select example" required>
+                <option *ngFor="let director of Directores" [value]="director.idDirector">{{ director.Nombre }}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="idActor" class="form-label">Actor</label>
+              <select class="form-select" id="idActor" name="idActor" formControlName="idActor" aria-label="Default select example" required>
+                <option *ngFor="let actor of Actores" [value]="actor.idActor">{{ actor.Nombre }}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="idGenero" class="form-label">Género</label>
+              <select class="form-select" id="idGenero" name="idGenero" formControlName="idGenero" aria-label="Default select example" required>
+                <option *ngFor="let genero of Generos" [value]="genero.idGenero">{{ genero.Nombre }}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="sinopsis" class="form-label">Sinopsis</label>
+              <input type="text" class="form-control" id="sinopsis" placeholder="Sinopsis" name="sinopsis" formControlName="sinopsis" required>
+            </div>
+            <div class="form-group">
+              <label for="duracion" class="form-label">Duración</label>
+              <input type="text" class="form-control" id="duracion" placeholder="Duración" name="duracion" formControlName="duracion" required>
+            </div>
+            <div class="form-group">
+              <label for="imagen" class="form-label">Imagen</label>
+              <input type="text" class="form-control" id="imagen" placeholder="URL de la imagen" name="imagen" formControlName="imagen" required>
+            </div>
+            <div class="row mt-2 text-center">
+              <div class="col-lg-6">
+                <button type="button" class="btn btn-danger" routerLink="/peliculas">Volver</button>
+              </div>
+              <div class="col-lg-6">
+                <button type="submit" class="btn btn-success" [disabled]="!form.valid">Modificar Película</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

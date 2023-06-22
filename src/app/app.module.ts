@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms'; 
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BodyComponent } from './leibnitz/PIII/generic/body/body.component';
@@ -24,6 +25,9 @@ import { TopGenerosComponent } from './leibnitz/PIII/modulos/grupo4/top-generos/
 import { TendenciasComponent } from './leibnitz/PIII/modulos/grupo4/tendencias/tendencias.component';
 import { TotalUsariosComponent } from './leibnitz/PIII/modulos/grupo4/total-usarios/total-usarios.component';
 import { EstadisticasUsuarioComponent } from './leibnitz/PIII/modulos/grupo4/estadisticas-usuario/estadisticas-usuario.component';
+import { CrearPeliculaComponent } from './leibnitz/PIII/modulos/grupo3/crear-pelicula/crear-pelicula.component';
+import { EditarPeliculaComponent } from './leibnitz/PIII/modulos/grupo3/editar-pelicula/editar-pelicula.component';
+import { ConsultarPeliculaComponent } from './leibnitz/PIII/modulos/grupo3/consultar-pelicula/consultar-pelicula.component';
 
 @NgModule({
   declarations: [
@@ -45,12 +49,16 @@ import { EstadisticasUsuarioComponent } from './leibnitz/PIII/modulos/grupo4/est
     TopGenerosComponent,
     TendenciasComponent,
     TotalUsariosComponent,
-    EstadisticasUsuarioComponent
+    EstadisticasUsuarioComponent,
+    CrearPeliculaComponent,
+    EditarPeliculaComponent,
+    ConsultarPeliculaComponent
   ],
   imports: [
     BrowserModule,    
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     AuthModule.forRoot({
       domain: 'dev-g4llofp4fbls07nw.us.auth0.com',
       clientId: 'jswybq3M4ezletgJAwEsHQUs25OJt5ef',
