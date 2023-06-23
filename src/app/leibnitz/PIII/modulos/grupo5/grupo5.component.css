@@ -1,0 +1,46 @@
+.contacto-card {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  }
+  
+  .contacto-card h4 {
+    margin-bottom: 10px;
+  }
+
+  .lista {
+    max-height: calc(2 * 120px);
+    overflow-y: auto;
+  }
+
+  .buscar{
+    height: 6vh;
+    width: 6vh;
+    margin-top: 2.6vh;
+    border-color: blueviolet;
+    border-radius: 5px; 
+  }
+
+  .recargar{
+    height: 6vh;
+    width: 6vh;
+    margin-top: 2.6vh;
+    border-color: blueviolet;
+    border-radius: 5px; 
+  }
+
+
+  .UsuarioIDInputText{
+    margin-left: 7vh;
+  }
+  
+  .botonbuscar{
+    margin-top: 4vh;
+    align-items: center;
+
+  }
+  
+ .botonrecargar{
+   align-items: center;
+   margin-top: 1vh;
+ }
