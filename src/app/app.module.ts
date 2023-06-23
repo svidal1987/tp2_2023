@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms'; 
 import { HttpClientModule } from '@angular/common/http';
@@ -55,7 +56,8 @@ import { ConsultarPeliculaComponent } from './leibnitz/PIII/modulos/grupo3/consu
     ConsultarPeliculaComponent
   ],
   imports: [
-    BrowserModule,    
+    BrowserModule,
+    FormsModule,    
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
