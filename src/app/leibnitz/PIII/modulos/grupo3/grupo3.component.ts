@@ -21,9 +21,10 @@ export class Grupo3Component implements OnInit {
     })
   }
   deletePelicula(id: number) {
-    this.servicio.deletePelicula(id).subscribe(() => {
-      this.getPeliculas();
-    })
+    if(confirm('¿Quieres eliminar esta pelicula?')){
+      this.servicio.deletePelicula(id).subscribe(() => {
+        this.getPeliculas();
+      })
+    }
   }
-
 }
